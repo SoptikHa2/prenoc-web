@@ -39,6 +39,10 @@ summary {
 }
 
 /* PRESENTATIONS TABLE */
+.tablecontainer {
+    max-width: 100%;
+    overflow: auto;
+}
 table {
     border-collapse: collapse;
 }
