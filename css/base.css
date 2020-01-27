@@ -6,7 +6,6 @@ body {
 }
 
 article {
-    font-size: 16px;
     line-height: 1.6;
     margin: 40px auto;
     padding: 0 10px;
@@ -21,6 +20,12 @@ h1 {
 
 a {
     color: inherit;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    padding-bottom: 1em;
 }
 
 
@@ -61,4 +66,30 @@ nav a {
     font-size: 1.2em;
     padding: 1em;
     font-weight: 800;
+}
+
+/* ORGTEAM CARDS */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    flex: 1;
+}
+
+.card > .card-details {
+    display: none;
+}
+
+.card:hover > .card-details {
+    display: flex;
+}
+.card:hover > .card-info {
+    display: none;
+}
+
+.card img {
+    max-width: 60%;
 }
