@@ -42,6 +42,10 @@ summary {
     cursor: pointer;
 }
 
+img {
+    max-width: 90%;
+}
+
 /* PRESENTATIONS TABLE */
 .tablecontainer {
     max-width: 100%;
