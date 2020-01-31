@@ -1,7 +1,7 @@
 let d = new Date();
 if(d.getMonth() != 3 || d.getDate() != 1)
 {
-    console.log("Here goes nothing");
+    console.log("Here comes nothing");
 }
 else
 {
