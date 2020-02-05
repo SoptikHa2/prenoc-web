@@ -123,7 +123,7 @@ nav a {
 .card > .card-details {
     opacity: 0;
 }
-/*
+
 .card:hover > .card-details {
     opacity: 1;
     transition: 0.3s;
@@ -133,7 +133,7 @@ nav a {
     display: none;
     transition: 0.3s;
 }
-*/
+
 .card img {
     max-width: 60%;
 }
