@@ -90,6 +90,7 @@ nav:first-child() {
 
 .logo img {
     max-height: 3em;
+    margin: 0;
     margin-right: 1em;
 }
 .logo h1 {
