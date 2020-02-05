@@ -11,7 +11,7 @@ else
 function executeApril() {
     console.log("It's party time!!");
 
-    document.write('<link rel="stylesheet" type="text/css" href="css/april.css">');
+    document.body.innerHTML += '<link rel="stylesheet" type="text/css" href="css/april.css">';
 
     sayori(0.05);
 }
