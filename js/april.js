@@ -1,3 +1,5 @@
+/* I said there is nothing to see here! */
+
 let d = new Date();
 if(d.getMonth() != 3 || d.getDate() != 1)
 {
