@@ -36,6 +36,12 @@
 					</tr>
 				</thead>
 				<tbody>
+					<tr style="display: none" id="ddlc-lecture">
+						<td>Petr Šťastný + πnoc webař</td>
+						<td>Dlouhá (60 min)</td>
+						<td>DDLC meme battle</td>
+						<td>Jedeme až do rána!</td>
+					</tr>
 					<tr>
 						<td><i>Přednášková noc</i></td>
 						<td>Krátká (30 min)</td>
@@ -120,6 +126,12 @@
 
 	<!-- Yeah, we track users. -->
 	<script src="https://soptik.tech/articles/js/base.js"  async="true"></script>
+
+	<script>
+		if(location.hash == "#ddlc") {
+			document.getElementById("ddlc-lecture").style = "color: var(--selected-item-fg-color);background-color: var(--selected-item-bg-color);";
+		}
+	</script>
 </body>
 
 </html>
