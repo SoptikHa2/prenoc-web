@@ -1,7 +1,7 @@
 /* I said there is nothing to see here! */
 
 let d = new Date();
-if((d.getMonth() != 3 && false) || (d.getDate() != 1 && false))
+if((d.getMonth() != 3) || (d.getDate() != 1))
 {
     console.log("Here comes nothing");
 }
