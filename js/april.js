@@ -1,7 +1,9 @@
 /* I said there is nothing to see here! */
 
+let april_chance = 0.1;
+
 let d = new Date();
-if((d.getMonth() != 3) || (d.getDate() != 1))
+if((d.getMonth() != 3) || (d.getDate() != 1) || Math.random() > april_chance)
 {
     console.log("Here comes nothing");
 }
@@ -36,6 +38,8 @@ function executeKarelApril() {
         org.innerText = "Karel Sedláček";
     }
 
+    let title = document.getElementsByClassName("logo")[0];
+    title.innerHTML = "<img src='img/prenoc-chemsketch.png' style='height: 12em; max-height: 100vh'/>";
     window.setTimeout(() => replaceRandomWordWithKarel(), 2000);
 }
 
