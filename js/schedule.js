@@ -16,3 +16,8 @@
     };
     req.send(null);
  }
+
+ /* Get  */
+ function getNextLectures() {
+
+}

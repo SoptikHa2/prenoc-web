@@ -3,11 +3,7 @@
 let april_chance = 0.1;
 
 let d = new Date();
-<<<<<<< HEAD
-if((d.getMonth() != 3 && false) || (d.getDate() != 1 && false))
-=======
 if((d.getMonth() != 3) || (d.getDate() != 1) || Math.random() > april_chance)
->>>>>>> origin/master
 {
     console.log("Here comes nothing");
 }
@@ -42,11 +38,8 @@ function executeKarelApril() {
         org.innerText = "Karel Sedláček";
     }
 
-<<<<<<< HEAD
-=======
     let title = document.getElementsByClassName("logo")[0];
     title.innerHTML = "<img src='img/prenoc-chemsketch.png' style='height: 12em; max-height: 100vh'/>";
->>>>>>> origin/master
     window.setTimeout(() => replaceRandomWordWithKarel(), 2000);
 }
 
