@@ -9,7 +9,7 @@
  function loadSchedule() {
     var req = new XMLHttpRequest();
     req.responseType = 'json';
-    req.open('GET', "https://prenoc.cz/schedule.json", true);
+    req.open('GET', "https://beta.prenoc.cz/schedule.json", true);
     req.onload  = function() {
        var jsonResponse = req.response;
        schedule = JSON.parse(jsonResponse);
