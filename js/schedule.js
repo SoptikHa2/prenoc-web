@@ -1,23 +1,30 @@
-/* This file provides various helper functions that help
- * with lectures. This parses /schedule.json in order
- * to provide useful information.
- */
+// Schedule data
+schedule = {
+   "rooms": [
+      "A1",
+      "A2"
+   ],
+   "lectures": [
+      {
+         "name": "Test",
+         "description": "Very long text description that accurately describes the lecture. Lorem ispum dolor sit amet, consectetur adipiscing elit ad ad dolor sit amet am I am I am I am I am I am I am I am I am I am I am I is the first am I am I am I am I am.",
+         "timestampFrom": 1583747073400,
+         "timestampTo": 1583747075200,
+         "room": "A1"
+      },
+      {
+         "name": "Test2",
+         "description": "Very long text description that accurately describes the lecture. This is even better than the previous one.",
+         "timestampFrom": 1583747073400,
+         "timestampTo": 1583747077000,
+         "room": "A2"
+      }
+   ]
+}
 
- schedule = null;
-
- /* Load schedule from JSON file and store it into global variable */
- function loadSchedule() {
-    var req = new XMLHttpRequest();
-    req.responseType = 'json';
-    req.open('GET', "https://beta.prenoc.cz/schedule.json", true);
-    req.onload  = function() {
-       var jsonResponse = req.response;
-       schedule = JSON.parse(jsonResponse);
-    };
-    req.send(null);
- }
-
- /* Get  */
- function getNextLectures() {
-
+/// Load upcoming lectures and display them at /index.html
+function updateNextLectures() {
+   let now = Date.now();
+   let lectures_now = schedule.lectures.filter(lecture => lecture.timestampFrom < now && lecture.timestampTo > now);
+   let lectures_upcoming = schedule.lectures.filter(lecture => lecture.timestampFrom > now);
 }
