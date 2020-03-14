@@ -64,7 +64,7 @@ th {
 tr, td {
     padding: 1em;
 }
-tbody > tr:hover {
+tbody > tr:hover, tbody > tr:target {
     color: var(--selected-item-fg-color);
     background-color: var(--selected-item-bg-color);
 }
