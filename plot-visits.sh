@@ -46,7 +46,7 @@ title__is_unique=""
 if [[ "$3" == "--unique" ]]; then
 	title__is_unique="Unique"
 	# Filter records to only contain first log of IP address
-	data=$(awk ' BEGIN { FS=";" }
+	data=$(awk ' BEGIN { FS="🦄" }
 { 
 	if(IPS[$5] != 1) {
 		IPS[$5] = 1
@@ -106,7 +106,7 @@ END {
 elif [[ "$1" == "src" || "$1" == "source" ]]; then
 	# Prepare referrer data
 	# replace referrer "" with "(none)"
-	src=$(awk ' BEGIN { FS=";" }
+	src=$(awk ' BEGIN { FS="🦄" }
 {
 	# Prepare referrer data
 	if( $4 == "" ) {
