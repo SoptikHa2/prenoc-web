@@ -64,7 +64,7 @@ th {
 tr, td {
     padding: 1em;
 }
-tbody > tr:hover {
+tbody > tr:hover, tbody > tr:target {
     color: var(--selected-item-fg-color);
     background-color: var(--selected-item-bg-color);
 }
@@ -112,14 +112,15 @@ nav a {
 /* ORGTEAM CARDS */
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 .card {
-    flex: 1;
     padding: 1em;
+    display: grid;
+    grid-template-rows: auto;
 }
+
 /*
 .card > .card-details {
     opacity: 0;

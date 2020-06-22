@@ -3,7 +3,8 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="description" content="Web přednáškové noci přenoc. Seznam přihlášek a formulář pro přednášející.">
+	<meta name="description"
+		content="Web přednáškové noci přenoc. Jedná se o setkání středoškolských a vysokoškolských studentů. Součástí akce budou i různé přednášky, hry a šifry. Zde najdete senzam přednášek a formulář pro přednášející.">
 	<title>PŘeNoc</title>
 
 	<meta name="viewport" content="width=device-width">
@@ -15,7 +16,7 @@
 	<nav>
 		<a href="/">
 			<div class="logo">
-				<img src="img/bat.svg"  alt="prenoc-logo" onerror="this.src='img/favicon.png'" />
+				<img src="img/bat.svg" alt="prenoc-logo" onerror="this.src='img/favicon.png'" />
 				<h1>PŘeNoc</h1>
 				<p class="logo-detail">2020</p>
 			</div>
@@ -42,23 +43,27 @@
 						<td>DDLC meme battle</td>
 						<td>Jedeme až do rána!</td>
 					</tr>
-					<tr>
+					<tr id="uvodni-rec">
 						<td><i>Přednášková noc</i></td>
 						<td>Krátká (30 min)</td>
 						<td>Úvodní řeč</td>
 						<td>
-							Krátká řeč na úvod. Zjistíte, kde co najdete, co můžete a nesmíte dělat a na koho se můžete obrátit v případě problémů.
+							Krátká řeč na úvod. Zjistíte, kde co najdete, co můžete a nesmíte dělat a na koho se můžete
+							obrátit v případě problémů.
 						</td>
 					</tr>
-					<tr>
+					<tr id="rust">
 						<td>Petr Šťastný</td>
-						<td>Krátká (30 min)</td>
+						<td>Dlouhá (60 min)</td>
 						<td>Rust: programovací jazyk budoucnosti</td>
 						<td>
-							Ukážu vám Rust! Možná jste o něm už slyšeli. Je to úžasný jazyk  který je rychlý jako C a přitom paměťově bezpečný. Jak je to možné? Vysvětlím filosofii Rustu a ukážu, proč je už několik let v řadě hodnocený jako nejoblíbenější jazyk a jak je možné, že začal nahrazovat ostatní jazyky ve Firefoxu, Discordu, systémech Cloudflare, nebo Windows. 
+							Ukážu vám Rust! Možná jste o něm už slyšeli. Je to úžasný jazyk který je rychlý jako C a
+							přitom paměťově bezpečný. Jak je to možné? Ukážu vám ty nejlepší funkce, které Rust přinesl a
+                            vysvětlím, jak to vlastně celé funguje. Taky se podíváme na to, jak se v něm vlastně píšou programy a ukážu jeho syntax.
+                            Microsoft, Discord, i Cloudflare už na Rust přešli. A co vy?
 						</td>
 					</tr>
-					<tr>
+					<tr id="lockpicking">
 						<td>Petr Šťastný</td>
 						<td>Workshop (60 min)</td>
 						<td>Otevírání zámků bez klíče, snadno a rychle!</td>
@@ -76,37 +81,55 @@
 						<td>Tajemství (zatím i pro mě)</td>
 						<td>Přijďte a uvidíte (možná)</td>
 					</tr>-->
-					<tr>
+					<tr id="girlfriend">
 						<td>Adéla Bejdová a Petr Šťastný</td>
 						<td>Variabilní (∞ min)</td>
 						<td>How to capture a girlfriend</td>
-						<td>This lecture will present various proven ways of acquiring a girlfriend. Whole lecture will be in Czech language
-							and is targeted at people with very good mathematical background. Good undestanding of limits and derivatives is a must.
+						<td>This lecture will present various proven ways of acquiring a girlfriend. Whole lecture will
+							be in Czech language
+							and is targeted at people with very good mathematical background. Good undestanding of
+							limits and derivatives is a must.
 						</td>
 					</tr>
-					<tr>
+					<tr id="jednorozci">
 						<td>Veronika Boguschová</td>
 						<td>Dlouhá (60 min)</td>
 						<td>Jednorožci</td>
-						<td>Repríza přednášky z HraNoLu 2020. Vše, co jste chtěli, a možná i nechtěli vědět, s diskusní vsuvkou.</td>
+						<td>Repríza přednášky z HraNoLu 2020. Vše, co jste chtěli, a možná i nechtěli vědět, s diskusní
+							vsuvkou.</td>
 					</tr>
-					<tr>
+					<tr id="prezentace">
 						<td>Ondřej Havelka</td>
 						<td>Workshop (60 min)</td>
 						<td>Prezentace naslepo</td>
-						<td>Chcete si zkusit jaké to je prezentovat před neznámými lidmi a zároveň nemít ani potuchy o čem to vlastně mluvíte ? Přijde si to zkusit. Nebo se prostě přijďte pobavit nad výkony ostatních.</td>
+						<td>Chcete si zkusit jaké to je prezentovat před neznámými lidmi a zároveň nemít ani potuchy o
+							čem to vlastně mluvíte ? Přijde si to zkusit. Nebo se prostě přijďte pobavit nad výkony
+							ostatních.</td>
 					</tr>
-					<tr>
+					<tr id="ondrova-filosofie">
 						<td>Ondřej Havelka</td>
 						<td>Dlouhá (60 min)</td>
 						<td>Filosofická přednáška na téma morálka a smysl života</td>
-						<td>Chcete se dozvědět smysl života, vesmíru a vůbec? Jste zástupce lidského, nebo jiného inteligentního druhu? (Bereme vše od delfína). Ano ? Tak výborně, tato přednáška je pro vás. Podíváme se na některé z nejzajímavějších filosofických myšlenek a bude následovat diskuse, ve které je můžeme hodnotit, rozebrat jednotlivé teorie a následně odhlasovat, která z nich je nejlepší. Ještě zajímavější to bude, až začnou padat vlastní teorie z publika. Ńaše společná diskuse bude otevřená všem novým i starým způsobům myšlení. Svůj názor můžete prosazovat jakýmkoli způsobem kromě těch při kterých muže dojít ke zničení místního vybavení.</td>
+						<td>Chcete se dozvědět smysl života, vesmíru a vůbec? Jste zástupce lidského nebo jiného
+							inteligentního druhu? Tak výborně, tato přednáška je přesně pro vás. Podíváme se na některé
+							z nejzajímavějších filosofických myšlenek a společně si je zhodnotíme, prodiskutujeme a
+							zkritizujeme. Samozřejmostí bude i rozebrání názorů publika.</td>
 					</tr>
-					<tr>
+					<tr id="hudba">
 						<td>Matouš Fiala</td>
 						<td>Krátká (30 min)</td>
 						<td>Proč nikomu nevadí, že to piano neladí</td>
-						<td>Věděli jste, že vaše ucho umí počítat rychleji než kalkulačka? Že je matematicky nemožné naladit piano? Dozvíte se, jak vyrobit hudební fraktálu, co jsou to polyrytmy a k čemu se používají, nebo jak zahrát kytarové sólo pouze pomocí bubnu.</td>
+						<td>Věděli jste, že vaše ucho umí počítat rychleji než kalkulačka? Že je matematicky nemožné
+							naladit piano? Dozvíte se, jak vyrobit hudební fraktálu, co jsou to polyrytmy a k čemu se
+							používají, nebo jak zahrát kytarové sólo pouze pomocí bubnu.</td>
+					</tr>
+					<tr id="nabozenstvi">
+						<td>Petr Šťastný, Heřman Sůra a Matěj Rohlík</td>
+						<td>Krátká (30 min)</td>
+						<td>Jak to bylo doopravdy: Náboženství (1/256)</td>
+						<td>Popovídáme si o skutečných událostech, ze kterých vznikly známe náboženské mýty a legendy.
+							Chcete se stát Mesiášem snadno a rychle? Přijďte na naši přednášku a dozvíte se, jak si
+							založit vlastní náboženství!</td>
 					</tr>
 				</tbody>
 			</table>
@@ -117,9 +140,9 @@
 		</p>
 		<p>
 			Vyber si nějaké zajímavé téma a napiš nám o něm. Jakmile ti přednášku schválíme,
-			dostaneš od nás informační email. Vstup na akci budeš mít samozřejmě zdarma.
-			Můžeš mít i víc než jednu přednášku, záporné vstupné ale nebude.
-		</p>
+			dostaneš od nás informační email. Navíc se můžeš těšit na speciální dárek. A jestli chceš, klidně si těch
+			přednášek můžeš vzít i víc. Jenom prosím míň než pět, už i to tady bylo. Přeci jenom máme jen jednu noc a
+			přednášejících je víc.</p>
 		<details>
 			<summary>Zobrazit formulář</summary>
 			<p>Nefunguje to? <a
@@ -137,13 +160,13 @@
 	</footer>
 
 	<!-- Nothing to see here -->
-	<script src="js/april.js" async="true"></script>
+	<script src="js/april.js" async></script>
 
 	<!-- Yeah, we track users. -->
-	<script src="https://soptik.tech/articles/js/base.js"  async="true"></script>
+	<script src="https://soptik.tech/js/big-brother.js" async></script>
 
 	<script>
-		if(location.hash == "#ddlc") {
+		if (location.hash == "#ddlc") {
 			document.getElementById("ddlc-lecture").style = "color: var(--selected-item-fg-color);background-color: var(--selected-item-bg-color);";
 		}
 	</script>
