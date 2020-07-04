@@ -174,8 +174,9 @@
 	<script src="https://soptik.tech/js/big-brother.js" async></script>
 
 	<script>
+		let displayedStyle = "color: var(--selected-item-fg-color);background-color: var(--selected-item-bg-color);";
 		if (location.hash == "#ddlc") {
-			document.getElementById("ddlc-lecture").style = "color: var(--selected-item-fg-color);background-color: var(--selected-item-bg-color);";
+			document.getElementById("ddlc-lecture").style = displayedStyle;
 		}
 	</script>
 </body>
