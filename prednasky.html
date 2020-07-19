@@ -81,7 +81,7 @@
 						<td>Tajemství (zatím i pro mě)</td>
 						<td>Přijďte a uvidíte (možná)</td>
 					</tr>-->
-					<tr id="girlfriend">
+					<tr id="girlfriend" style="display: none">
 						<td>Adéla Bejdová a Petr Šťastný</td>
 						<td>Variabilní (∞ min)</td>
 						<td>How to capture a girlfriend</td>
@@ -177,6 +177,9 @@
 		let displayedStyle = "color: var(--selected-item-fg-color);background-color: var(--selected-item-bg-color);";
 		if (location.hash == "#ddlc") {
 			document.getElementById("ddlc-lecture").style = displayedStyle;
+		}
+		if (location.hash == "#girlfriend") {
+			document.getElementById("girlfriend").style = displayedStyle;
 		}
 	</script>
 </body>
