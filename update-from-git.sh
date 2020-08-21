@@ -1,6 +1,6 @@
 #!/bin/bash
 (
-cd /var/www/prenoc || return
+cd /var/www/prenocbeta || return
 # Force pull
 git fetch --all
 git reset --hard origin/beta
