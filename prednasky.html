@@ -37,7 +37,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr style="display: none" id="ddlc-lecture">
+					<tr style="display: none" id="ddlc">
 						<td>Petr Šťastný + πnoc webař</td>
 						<td>Dlouhá (60 min)</td>
 						<td>DDLC meme battle</td>
@@ -213,12 +213,9 @@
 
 	<script>
 		let displayedStyle = "color: var(--selected-item-fg-color);background-color: var(--selected-item-bg-color);";
-		if (location.hash == "#ddlc") {
-			document.getElementById("ddlc-lecture").style = displayedStyle;
-		}
-		if (location.hash == "#girlfriend") {
-			document.getElementById("girlfriend").style = displayedStyle;
-		}
+        if (location.hash.length > 1) {
+            document.getElementById(location.hash.replace("#", "")).style = displayedStyle;
+        }
 	</script>
 </body>
 
