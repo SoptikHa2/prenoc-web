@@ -139,3 +139,22 @@ nav a {
     /*max-width: 60%;*/
     display: none;
 }
+
+
+div.alertBox {
+    padding: 1em;
+    margin: 1em;
+    font-size: 1.2em;
+}
+div.alertBox span {
+    float: right;
+    font-size: 0.8em;
+}
+div.red {
+    background-color: red;
+    color: white;
+}
+div.green {
+    background-color: green;
+    color: white;
+}
