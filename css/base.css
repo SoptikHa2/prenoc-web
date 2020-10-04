@@ -158,3 +158,20 @@ div.green {
     background-color: green;
     color: white;
 }
+div.blue {
+    color: var(--secondary-fg-color);
+    background-color: var(--secondary-bg-color);
+}
+
+input {
+    border-radius: 0px;
+    border: 0;
+    margin: 0 auto;
+    display: block;
+    padding: 1em;
+    width: 80%;
+}
+input, input:hover {
+    color: var(--primary-fg-color);
+    background-color: var(--primary-bg-color);
+}

@@ -69,6 +69,25 @@ soptik.tech/vb
             <strong>PŘeNoc se ruší.</strong> Uspořádáme ji, jakmile to situace dovolí. <a href="registrace.html">Zaregistruj se</a> a upozorníme tě,
             jakmile budeme mít vybrané datum. <span><br />Organizační tým PŘeNoci, 2020-09-30</span>
         </div>
+        <div class="alertBox green" style="display: none" id="sentOK">
+            <p>Tvůj email byl úspěšně zaznamenán. Dáme ti vědět před začátkem PŘeNoci.</p>
+        </div>
+        <div class="alertBox red" style="display: none" id="senttextTooLong">
+            <p>Nepovedlo se zaznamenat tvůj email. Jestli problém přetrvává, kontaktuj prosím orgteam.</p>
+        </div>
+        <div class="alertBox red" style="display: none" id="sentforbiddenFilename">
+            <p>Nepovedlo se zaznamenat tvůj email. Jestli problém přetrvává, kontaktuj prosím orgteam.</p>
+        </div>
+        <div class="alertBox blue">
+            Chceš dostat upozornění jakmile budeme znát definitivní datum PŘeNoci, ale nechceš se napevno registrovat? Zapiš nám
+            svůj email a dáme ti vědět jakmile vybereme finální datum.
+            <form action="https://soptik.tech/api/newsletter/insert" method="GET">
+                <input type="text" name="filename" value="prenocnewsletter.log" style="display: none;">
+                <input type="email" name="text" placeholder="email@prenoc.cz" id="newsletter-email"/>
+                <br />
+                <input type="submit" value="Přihlásit se">
+            </form>
+        </div>
 		<h2>Co to je?</h2>
 		<!-- A co to dělám místo učení se na maturitu???? -->
 		<p>
@@ -192,6 +211,13 @@ soptik.tech/vb
 
 	<!-- Yeah, we track users. -->
 	<script src="https://soptik.tech/js/big-brother.js" async></script>
+
+	<script>
+		let displayedStyle = "";
+        if (location.hash.length > 1) {
+            document.getElementById(location.hash.replace("#", "")).style = displayedStyle;
+        }
+	</script>
 </body>
 
 </html>
