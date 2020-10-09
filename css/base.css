@@ -138,3 +138,38 @@ nav a {
 .card img {
     max-width: 60%;
 }*/
+
+div.alertBox {
+    padding: 1em;
+    margin: 1em;
+    font-size: 1.2em;
+}
+div.alertBox span {
+    float: right;
+    font-size: 0.8em;
+}
+div.red {
+    background-color: red;
+    color: white;
+}
+div.green {
+    background-color: green;
+    color: white;
+}
+div.blue {
+    color: var(--secondary-fg-color);
+    background-color: var(--secondary-bg-color);
+}
+
+input {
+    border-radius: 0px;
+    border: 0;
+    margin: 0 auto;
+    display: block;
+    padding: 1em;
+    width: 80%;
+}
+input, input:hover {
+    color: var(--primary-fg-color);
+    background-color: var(--primary-bg-color);
+}

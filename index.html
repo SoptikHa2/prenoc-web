@@ -65,6 +65,29 @@ soptik.tech/vb
 		<a href="registrace.html">Registrace</a>
 	</nav>
 	<article>
+        <div class="alertBox red">
+            <strong>PŘeNoc se ruší.</strong> Uspořádáme ji, jakmile to situace dovolí. <a href="registrace.html">Zaregistruj se</a> a upozorníme tě,
+            jakmile budeme mít vybrané datum. <span><br />Organizační tým PŘeNoci, 2020-09-30</span>
+        </div>
+        <div class="alertBox green" style="display: none" id="sentOK">
+            <p>Tvůj email byl úspěšně zaznamenán. Dáme ti vědět před začátkem PŘeNoci.</p>
+        </div>
+        <div class="alertBox red" style="display: none" id="senttextTooLong">
+            <p>Nepovedlo se zaznamenat tvůj email. Jestli problém přetrvává, kontaktuj prosím orgteam.</p>
+        </div>
+        <div class="alertBox red" style="display: none" id="sentforbiddenFilename">
+            <p>Nepovedlo se zaznamenat tvůj email. Jestli problém přetrvává, kontaktuj prosím orgteam.</p>
+        </div>
+        <div class="alertBox blue">
+            Chceš dostat upozornění jakmile budeme znát definitivní datum PŘeNoci, ale nechceš se napevno registrovat? Napiš nám
+            svůj email a dáme ti vědět jakmile vybereme finální datum.
+            <form action="https://soptik.tech/api/newsletter/insert" method="GET">
+                <input type="text" name="filename" value="prenocnewsletter.log" style="display: none;">
+                <input type="email" name="text" placeholder="email@prenoc.cz" id="newsletter-email"/>
+                <br />
+                <input type="submit" value="Přihlásit se">
+            </form>
+        </div>
 		<h2>Co to je?</h2>
 		<!-- A co to dělám místo učení se na maturitu???? -->
 		<p>
@@ -81,7 +104,7 @@ soptik.tech/vb
 		</p>
 		<h2>Kdy, kde?</h2>
 		<p>
-            Akce proběhne <strong>10. až 11. října</strong> (to jest noc ze soboty na neděli). Vstup do budovy bude možný od 17:30. Zaregistruj se a dostaneš od nás email, jakmile
+            PŘeNoc je odsunuta na neučito. Zaregistruj se a dostaneš od nás email, jakmile
 			budou známy podrobnější informace.
 		</p>
 		<p>
@@ -169,11 +192,15 @@ soptik.tech/vb
 		<h2>Kontakt</h2>
 		<p>
 			Chceš nám napsat nebo se nás na něco zeptat?
-			Máme email &lt; <a href="mailto:orgteam@prenoc.cz">orgteam@prenoc.cz</a> &gt;.
+            Máme email &lt; <a href="mailto:orgteam@prenoc.cz">orgteam@prenoc.cz</a> &gt;. Případně nás najdeš na <a href="https://www.facebook.com/prenoc">Facebooku</a>.
 		</p>
+        <p>
+            Pokud tě tenhle druh akcí zajímá, náš organizátorský tým dal dohromady seznam super akcí, o které bys prostě neměl přijít. Podívej se na náš <a href="podobne-akce.html">seznam podobných akcí</a>.
+        <p>
 	</article>
 
 	<footer>
+        <a href="podobne-akce.html">Podobné akce</a> <br />
 		Vyrobeno Petrem Šťastným &lt;<a href="https://soptik.tech">soptik.tech</a>&gt; <br />
 		<a href="https://soptik.tech/privacy.html">Privacy policy</a> <br />
 		<a href="https://github.com/soptikha2/prenoc-web">GitHub</a>
@@ -187,6 +214,13 @@ soptik.tech/vb
 
 	<!-- Yeah, we track users. -->
 	<script src="https://soptik.tech/js/big-brother.js" async></script>
+
+	<script>
+		let displayedStyle = "";
+        if (location.hash.length > 1) {
+            document.getElementById(location.hash.replace("#", "")).style = displayedStyle;
+        }
+	</script>
 </body>
 
 </html>
