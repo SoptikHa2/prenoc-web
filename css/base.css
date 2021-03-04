@@ -22,7 +22,15 @@ h1 {
 }
 
 a {
-    color: inherit;
+    text-decoration: none;
+    color: #912ca3;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #D678E7;
+    transition: 100ms;
+    border-bottom: 1px solid #D678E7;
 }
 
 footer {
@@ -196,13 +204,5 @@ input, input:hover {
 
 .link-list a, .list-link {
     position: relative;
-    text-decoration: none;
-    color: #912ca3;
-    font-weight: bold;
 }
 
-.link-list a:hover, .list-link:hover {
-    color: #D678E7;
-    transition: 100ms;
-    border-bottom: 1px solid #D678E7;
-}
