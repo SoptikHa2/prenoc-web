@@ -71,13 +71,27 @@ tbody > tr:hover, tbody > tr:target {
 
 /* NAVIGATION */
 nav {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     color: var(--secondary-fg-color);
     background-color: var(--secondary-bg-color);
+}
+
+.nav-wrapper {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    max-width: 1050px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav-wrapper a:not(:first-of-type) {
+    box-sizing: border-box;
+    position: relative;
+}
+
+.nav-wrapper a:not(:first-of-type):hover {
+    border-bottom: 3px solid #D678E7;
+    top: 1.5px;
 }
 
 nav:first-child() {
@@ -174,4 +188,21 @@ input {
 input, input:hover {
     color: var(--primary-fg-color);
     background-color: var(--primary-bg-color);
+}
+
+.link-list {
+    list-style-type: none;
+}
+
+.link-list a, .list-link {
+    position: relative;
+    text-decoration: none;
+    color: #912ca3;
+    font-weight: bold;
+}
+
+.link-list a:hover, .list-link:hover {
+    color: #D678E7;
+    transition: 100ms;
+    border-bottom: 1px solid #D678E7;
 }
