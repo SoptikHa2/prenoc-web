@@ -14,15 +14,18 @@
 
 <body>
 	<nav>
-		<a href="/">
-			<div class="logo">
-				<img src="img/bat.svg" alt="prenoc-logo" onerror="this.src='img/favicon.png'" />
-				<h1>PŘeNoc</h1>
-				<p class="logo-detail">2021</p>
-			</div>
-		</a>
-		<a href="prednasky.html">Přednášky</a>
-		<a href="registrace.html">Registrace</a>
+		<div class="nav-wrapper">
+			<a href="/">
+				<div class="logo">
+					<img src="img/bat.svg" alt="prenoc-logo" onerror="this.src='img/favicon.png'"/>
+					<h1>PŘeNoc</h1>
+					<p class="logo-detail">2021</p>
+				</div>
+			</a>
+			<div style="flex: 1"></div>
+			<a href="prednasky.html">Přednášky</a>
+			<a href="registrace.html">Registrace</a>
+		</div>
 	</nav>
 	<article>
 		<h2>Přihlášené přednášky</h2>
@@ -129,7 +132,7 @@
 						<td>Kristýna Petrlíková</td>
 						<td>Dlouhá (60 min)</td>
 						<td>Tučňák s rýží na sto způsobů </td>
-						<td>Snažili jste se někdy uvařit tučňáka s rýží, ale nakonec to vždycky skončilo polotovarem z GNOMEbusu? V tomto putovním seriálu si ukážeme přípravu lahodného pokrmu z polární kuchyně snadno a rychle. Vhodné i pro kuchaře začátečníky! 
+						<td>Snažili jste se někdy uvařit tučňáka s rýží, ale nakonec to vždycky skončilo polotovarem z GNOMEbusu? V tomto putovním seriálu si ukážeme přípravu lahodného pokrmu z polární kuchyně snadno a rychle. Vhodné i pro kuchaře začátečníky!
 
 							Základem každé dobré kuchyně je kvalitní prkýnko. Jak ale takové prkýnko vybrat, aby na něm bylo možné zpracovat i pořádně vytíženého tučňáka? To vše (a mnohem více) se dozvíte v této přednášce! A pokud náhodou ještě svého tučňáka nemáte, nezoufejte! Během večera bude určitě možnost nějakého ulovit. Nezapomeňte si hrnec!</td>
 					</tr>
@@ -198,7 +201,7 @@
 		</div>
 		<h2>Registrace přednášky</h2>
 		<p>
-			Registruj se pomocí <a href="https://docs.google.com/forms/d/e/1FAIpQLSdEtuzVR1rMi1tS5La6bZNUE8XbE4dChD7P3Ynvqsw3Dlg5tw/viewform">
+			Registruj se pomocí <a class="list-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdEtuzVR1rMi1tS5La6bZNUE8XbE4dChD7P3Ynvqsw3Dlg5tw/viewform">
 			tohoto formuláře</a> a přihlaš si svoji přednášku na PŘeNoc.
 		</p>
 		<p>
@@ -209,6 +212,7 @@
 		<details>
 			<summary>Zobrazit formulář</summary>
 			<p>Nefunguje to? <a
+					class="list-link"
 					href="https://docs.google.com/forms/d/e/1FAIpQLSdEtuzVR1rMi1tS5La6bZNUE8XbE4dChD7P3Ynvqsw3Dlg5tw/viewform">Klikni
 					sem</a>.</p>
 			<iframe
@@ -217,10 +221,10 @@
 	</article>
 
 	<footer>
-        <a href="podobne-akce.html">Podobné akce</a> <br />
-		Vyrobeno Petrem Šťastným &lt;<a href="https://soptik.tech">soptik.tech</a>&gt; <br />
-		<a href="https://soptik.tech/privacy.html">Privacy policy</a> <br />
-		<a href="https://github.com/soptikha2/prenoc-web">GitHub</a>
+        <a class="list-link" href="podobne-akce.html">Podobné akce</a> <br />
+		Vyrobeno Petrem Šťastným &lt;<a class="list-link" href="https://soptik.tech">soptik.tech</a>&gt; <br />
+		<a class="list-link" href="https://soptik.tech/privacy.html">Privacy policy</a> <br />
+		<a class="list-link" href="https://github.com/soptikha2/prenoc-web">GitHub</a>
 	</footer>
 
 	<!-- Nothing to see here -->
