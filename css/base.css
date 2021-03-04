@@ -173,8 +173,11 @@ div.alertBox span {
     font-size: 0.8em;
 }
 div.red {
-    background-color: red;
+    background-color: darkred;
     color: white;
+}
+div.red a {
+    color: #fc74fa;
 }
 div.green {
     background-color: green;
