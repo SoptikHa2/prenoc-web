@@ -23,12 +23,11 @@ h1 {
 
 a {
     text-decoration: none;
-    color: #912ca3;
+    color: #D678E7;
     font-weight: bold;
 }
 
 a:hover:not(.nav-wrapper a) {
-    color: #D678E7;
     transition: 100ms;
     border-bottom: 1px solid #D678E7;
 }
