@@ -27,7 +27,7 @@ a {
     font-weight: bold;
 }
 
-a:hover {
+a:hover:not(.nav-wrapper a) {
     color: #D678E7;
     transition: 100ms;
     border-bottom: 1px solid #D678E7;
