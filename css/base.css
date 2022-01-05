@@ -171,9 +171,17 @@ div.alertBox {
     font-size: 1.2em;
 }
 div.alertBox span {
-    float: right;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
     font-size: 0.8em;
+    margin-bottom: 0.8em;
 }
+
+div.alertBox form{
+  margin-top: 1em;
+}
+
 div.red {
     background-color: darkred;
     color: white;
@@ -197,6 +205,7 @@ input {
     display: block;
     padding: 1em;
     width: 80%;
+    box-sizing: border-box;
 }
 input, input:hover {
     color: var(--primary-fg-color);
@@ -210,4 +219,3 @@ input, input:hover {
 .link-list a, .list-link {
     position: relative;
 }
-
