@@ -1,0 +1,62 @@
+.logo img {
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.logo h1:hover {
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+
+p:hover {
+    animation-name: textcrazy;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+body, article {
+    animation-name: backgroundchange;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+}
+
+.disappearing {
+    position: sticky;
+    max-width: 400px;
+    max-height: 400px;
+    animation-name: disappear;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes textcrazy {
+    from { font-size: 1em; }
+    to { font-size: 1.1em; }
+}
+
+@keyframes backgroundchange {
+    from {background-color: var(--primary-bg-color);}
+    to { background-color: greenyellow; }
+}
+
+@keyframes disappear {
+    from { opacity: 1; transform: scale(1); }
+    to { opacity: 0; transform: scale(0); }
+}
