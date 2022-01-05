@@ -53,11 +53,6 @@ img {
     max-width: 90%;
 }
 
-.banner {
-    text-align: center;
-    font-size: 180%;
-}
-
 /* PRESENTATIONS TABLE */
 .tablecontainer {
     max-width: 100%;
@@ -138,20 +133,19 @@ nav a {
 /* ORGTEAM CARDS */
 
 .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .card {
+    flex: 1;
     padding: 1em;
-    display: grid;
-    grid-template-rows: auto;
 }
 
-/*
 .card > .card-details {
     opacity: 0;
 }
-
+/*
 .card:hover > .card-details {
     opacity: 1;
     transition: 0.3s;
@@ -161,9 +155,12 @@ nav a {
     display: none;
     transition: 0.3s;
 }
+*/
 .card img {
-    max-width: 60%;
-}*/
+    /*max-width: 60%;*/
+    display: none;
+}
+
 
 div.alertBox {
     padding: 1em;

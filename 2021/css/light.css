@@ -1,0 +1,8 @@
+:root {
+    --primary-fg-color: #444;
+    --primary-bg-color: #FFF;
+    --secondary-fg-color: #EEE;
+    --secondary-bg-color: #912ca3;
+    --selected-item-fg-color: #222;
+    --selected-item-bg-color: #fbf0ff;
+}
