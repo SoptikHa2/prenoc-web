@@ -49,10 +49,6 @@ summary {
     cursor: pointer;
 }
 
-img {
-    max-width: 90%;
-}
-
 .banner {
     text-align: center;
     font-size: 180%;
@@ -91,7 +87,7 @@ nav {
     margin: 0 auto;
     display: flex;
     width: 100%;
-    max-width: 1050px;
+    max-width: calc(1050px + 4vw);
     flex-wrap: wrap;
     align-items: center;
 }
@@ -99,6 +95,12 @@ nav {
 .nav-wrapper a:not(:first-of-type) {
     box-sizing: border-box;
     position: relative;
+}
+
+.nav-wrapper a:not(:first-of-type) {
+    border-bottom: 3px solid transparent;
+    top: 1.5px;
+    transition: all 0.25s;
 }
 
 .nav-wrapper a:not(:first-of-type):hover {
@@ -138,15 +140,48 @@ nav a {
 /* ORGTEAM CARDS */
 
 .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin: -0.5em;
 }
 .card {
-    padding: 1em;
-    display: grid;
-    grid-template-rows: auto;
+    background: var(--secondary-fg-color);
+    color: var(--secondary-fg-color);
+    padding: 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 20%;
+    min-width: 200px;
+    max-width: 50%;
+    margin: 0.5em;
+
 }
 
+.card .org-name{
+  background: var(--secondary-bg-color);
+  color: var(--secondary-fg-color);
+  margin: 0;
+  padding: 1em;
+  height: 4em;
+}
+
+.card .card-info{
+  padding: 1em;
+  color: var(--primary-bg-color);
+}
+
+
+.card img{
+  max-width: 100%;
+  width: 100%;
+
+}
 /*
 .card > .card-details {
     opacity: 0;
@@ -166,8 +201,9 @@ nav a {
 }*/
 
 div.alertBox {
-    padding: 1em;
-    margin: 1em;
+    padding: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
     font-size: 1.2em;
 }
 div.alertBox span {
@@ -206,7 +242,18 @@ input {
     padding: 1em;
     width: 80%;
     box-sizing: border-box;
+    cursor: pointer;
+    transition: filter 0.2s;
 }
+
+#newsletter-email{
+  cursor: text;
+}
+
+#cudlitko:hover{
+  filter: invert(1);
+}
+
 input, input:hover {
     color: var(--primary-fg-color);
     background-color: var(--primary-bg-color);
@@ -218,4 +265,15 @@ input, input:hover {
 
 .link-list a, .list-link {
     position: relative;
+}
+
+#landing{
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+
+.card, .alertBox, input{
+  border-radius: 0.5em;
+  overflow: hidden;
 }

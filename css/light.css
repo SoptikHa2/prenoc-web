@@ -6,3 +6,8 @@
     --selected-item-fg-color: #222;
     --selected-item-bg-color: #fbf0ff;
 }
+
+
+.card-info{
+  color: black !important;
+}\
