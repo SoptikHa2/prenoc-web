@@ -1,8 +1,9 @@
 :root {
-    --primary-fg-color: #CCC;
-    --primary-bg-color: #222;
-    --secondary-fg-color: #EEE;
-    --secondary-bg-color: #912ca3;
-    --selected-item-fg-color: #fbf0ff;
-    --selected-item-bg-color: #333;
+    --primary-fg-color: #FFF;
+    --primary-bg-color: #1b1b1b;
+    --secondary-fg-color: #FFF;
+    --secondary-bg-color: #6a1b9a;
+    --selected-item-fg-color: #9c4dcc;
+    --selected-item-bg-color: #424242;
+    --dark-text-color: #38006b;
 }
